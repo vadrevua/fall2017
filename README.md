@@ -1,2 +1,2 @@
-# fall2017
+# Fall 2017
 All the coursework from Fall semester of 2017
