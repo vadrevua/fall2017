@@ -1,3 +1,2 @@
-savepoint firstSave;
-create table traveledCountries(name varchar(5), foreign key(employee_ID) references employees, foreign key(location_ID) references locations );
-rollback to savepoint firstSave;
+create table DEPT (ID NUMBER(7), name varchar2(25))
+INSERT INTO DEPT.ID SELECT * FROM DEPARTMENT
