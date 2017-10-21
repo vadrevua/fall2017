@@ -1,0 +1,53 @@
+{
+  "session": {
+    "new": true,
+    "sessionId": "SessionId.14a27837-5c87-490d-b1ed-b2badf403c9f",
+    "application": {
+      "applicationId": "amzn1.ask.skill.f2fc44f8-3826-4e1b-88b4-7958a56699ff"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "amzn1.ask.account.AHYSH5TEDWL2SSWUTWJ6UA35KTI6IERSBWBBEUHABB5IPUTI4VAC3UU7RP3VUAUIJNKSNX6UEAE2AQNF7X4WYX35AMOOE73BIJ72QPUEXLF6VJ3YIILRULSVQ4LWQN4FB6MDYUQRURJ4Q6RE2N4ZRZD2DCGWF4SSDC5LBDV27I25Z3EUYMB6OFKZ3YUN27QW6GTGVRKJ6XDMEEY"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.afe81840-4280-47cf-ab13-d1daa9cca9f8",
+    "intent": {
+      "name": "TransferFunds",
+      "slots": {
+        "amount": {
+          "name": "amount",
+          "value": "20"
+        },
+        "last_name": {
+          "name": "last_name",
+          "value": "barrows"
+        },
+        "first_name": {
+          "name": "first_name",
+          "value": "Archibald"
+        }
+      }
+    },
+    "locale": "en-US",
+    "timestamp": "2017-09-17T09:43:44Z"
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.f2fc44f8-3826-4e1b-88b4-7958a56699ff"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AHYSH5TEDWL2SSWUTWJ6UA35KTI6IERSBWBBEUHABB5IPUTI4VAC3UU7RP3VUAUIJNKSNX6UEAE2AQNF7X4WYX35AMOOE73BIJ72QPUEXLF6VJ3YIILRULSVQ4LWQN4FB6MDYUQRURJ4Q6RE2N4ZRZD2DCGWF4SSDC5LBDV27I25Z3EUYMB6OFKZ3YUN27QW6GTGVRKJ6XDMEEY"
+      },
+      "device": {
+        "supportedInterfaces": {}
+      }
+    }
+  },
+  "version": "1.0"
+}
