@@ -1,0 +1,89 @@
+Data Science is an interdisciplinary field that aims to extract knowledge products from big data
+Data Warehouses maintain and provide access to data
+  Data is stored in multiple relational tables
+
+Knowledge discovery process
+  1. Understand the problem domain
+  2. Understand the data
+  3. Prepare the data
+  4. Data Mining
+  5. Evaluate the discovered knowledge
+  6. Use the discovered knowledge
+
+    1. Understand the problem domain
+  to understand we need to...
+      Define the problem
+      Determine project goals
+      Determine Success Criteria
+      Identify key people
+      Learn about current solutions to the problem
+  Initial selection of potential data mining tools is performed in this step
+
+    2. Understand the data
+      Understanding includes the collection of sample data and determining which data will be needed including their format and size
+      Verification of data as well as usefulness is performed
+      Check data for missing values, redundancy, completeness, etc.
+
+    3. Preparation of the data
+      Select the sample of data
+      Run correlation and significance tests
+      Clean the data as well as check completeness of data records
+      Remove or correct noise
+      can use Discretization which is derivation of new attributes
+      doing all of these will result in new data records.
+      this is the most important step in this process
+      Also which takes the longest
+
+    4. Data Mining
+      This step is where we use the data mining tools and sometimes selection of new tools
+      Data mining tools use algorithms such as decision trees, SVM and clustering
+      Descriptive data mining provides a concise description of the data to reveal properties of the data
+      Predictive data mining constructs models while learning from the training data, which then makes a prediction of the test data
+        First the training datasets are designed and the data model is constructed using the chosen Data mining tools
+        next the data model is verified by using appropriate test procedures
+        this step usually takes less time than data preparation if the data had been prepared correctly
+
+    5. Evaluation of discovered knowledge
+      This includes, understanding the results, checking whether the info is interesting and/or useful
+      only the best models are selected from the results of the data mining
+      The entire knowledge discovery process may be revisited to identify if there are alternative actions that could have improved the results
+
+    6. Using the discovered knowledge
+      Consists of planning where and how the discovered knowledge will be used
+      Involves deployment of the product as well as developing a business plan
+      Creation of a plan to monitor the implementation of the discovered knowledge
+      Documentation of the entire project
+
+Iterative and Interactive
+    This is not a linear process, Many iteration may be needed to properly produce the success requirements
+    Feedback loops are necessary and steps may be repeated multiple times
+
+    about 20% of the time is spent on business objectives
+    about 60% on data preparation, Data is redundant, there might be significant errors, and necessary data might not be collected
+    about 20% for data mining and analysis of knowledge
+
+The challenges of knowledge discovery
+Might have data from various data sources
+Have a large variety of distinct Data mining tasks
+Have a large quantity of data
+
+The knowledge discovery process heavily depends on the quality and quantity of the data
+  We focus on 3 issues
+    Data Types, data storage, and amount/quality of the data
+    Data can have diverse formats and can be stored using a variety of different storage modes
+
+
+
+
+Information Retrieval
+  Find relevant documents in response to a user's query
+  Matches the language in the query and the language of documents
+  Most problems in computer science provide 1 right answer but Information retrieval provide multiple good answers
+  Most of the time the information is being retrieved from a database so Information retrieval systems must be efficient
+  Information retrieval systems require a high-quality and fast to compute measure of relevance
+    this means that information must be relevant to what the user needs
+  Information retrieval systems use fast to compute heuristics to find relevant information
+    thus many solutions will return sorted answers
+
+Searching the database
+    
