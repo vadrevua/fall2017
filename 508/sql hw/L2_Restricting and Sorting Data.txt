@@ -1,0 +1,15 @@
+Select last_name, salary from Employees where salary > 12000;
+Select last_name, department_id from Employees where employee_id = 176;
+Select last_name, salary from Employees where salary > 12000 or salary <5000;
+select last_name, job_id, hire_date from Employees where last_name = 'Matos' or last_name = 'Taylor' order by hire_date asc;
+Select last_name, Department_id from employees where department_id = 50 or department_id = 20 order by last_name;
+Select last_name, salary as "Monthly Salary" from employees where salary < 12000 or salary > 5000 order by last_name;
+Select last_name, hire_date from employees where hire_date >= '01-JAN-94' and hire_date <= '31-DEC-94';
+select last_name, job_id from employees where manager_id is null;
+select last_name, Salary, commission_pct from employees where commission_pct > 0.0 order by Salary DESC;
+select last_name, salary from employees where salary > &Salary;
+select employee_id, last_name, salary, department_ID from employees where manager_id = &ManagerID order by last_name asc;
+select last_name from employees where last_name like '__a%';
+select last_name from employees where last_name like '%a%' and last_name like '%e%';
+select last_name, job_id, salary from employees where (job_id = 'SA_REP' or job_id = 'ST_CLERK') and salary != 2500 and salary != 3500 and salary != 7000;
+select last_name as "Employee", salary "Monthly Salary", commission_pct from employees where Commission_pct = 0.2;

@@ -1,0 +1,40 @@
+True
+False
+True
+
+Select max(salary) "Maximum", Min(salary) "Minimum", sum(salary) "Sum", Round(avg(salary),0) as "Average"
+from Employees;
+
+Select job_id, max(salary) "Maximum", Min(salary) "Minimum", sum(salary) "Sum", Round(avg(salary),0) as "Average"
+from Employees
+group by Job_ID;
+
+Select job_id, count(job_id)
+from Employees
+group by Job_ID;
+
+Select job_id, count(job_id)
+from Employees
+where job_id = '&JobID'
+group by job_id;
+
+Select count(distinct manager_id) as "Number of Managers"
+from employees;
+
+select (max(salary)-min(salary)) as Difference
+from employees;
+
+select m.manager_id, min((e.salary))
+from employees m join employees e
+on e.manager_ID = m.employee_ID
+where m.manager_id is not NULL
+group by m.manager_ID
+having min(e.salary) > 6000;
+
+select count(hire_date)
+from employees
+where hire_date > '31-DEC-1994' and hire_date <'1-JAN-1999'; -- Couldn't get seperate years, this query shows How many employees were hired between 1995-1998
+
+select job_id as Job,department_id, sum(salary) as total
+from employees
+group by job_id, department_id; --Couldn't get multiple collumns of Department Numbers

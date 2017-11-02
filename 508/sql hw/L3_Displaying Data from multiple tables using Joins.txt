@@ -1,0 +1,38 @@
+Select location_ID, Street_Address, City, State_Province, Country_name
+from Locations natural join countries;
+
+select e.last_name, e.department_id, d.Department_name
+from employees e join DEPARTMENTS d
+on e.department_id = d.DEPARTMENT_ID;
+
+select e.last_name, e.job_id, e.department_id, d.Department_name
+from employees e join DEPARTMENTS d
+on e.department_id = d.DEPARTMENT_ID
+where location_id = 1800;
+
+select e.last_name as "employee", e.employee_id as "EMP#", d.manager_ID as "mgr#", d.last_name as "Manager"
+from employees e join employees d
+on e.manager_ID = d.manager_id;
+
+select e.last_name as "employee", e.employee_id as "EMP#", d.manager_ID as "mgr#", d.last_name as "Manager"
+from employees e left join employees d
+on e.manager_ID = d.manager_id;
+
+select e.Department_ID as "Department", e.last_name as "employee", d.last_name as "Colleague"
+from employees e join employees d
+on e.Department_ID = d.Department_ID;
+
+Select e.last_name, e.job_id, d.department_name, e.salary,j.grade_level
+from employees e join departments d
+on e.department_id = d.department_id
+join job_grades j on e.salary < j.highest_sal and e.salary > j.lowest_sal;
+
+select d.last_name, d.hire_date
+from employees e join employees d
+on e.hire_date < d.hire_date
+where e.last_name = 'Davies' and e.hire_date = ('29-JAN-05');
+
+select e.last_name as "Employee LN", e.Hire_date as "Emp Hire Date", m.last_name as "ManagerLN", m.Hire_date as "M Hire Date"
+from employees e join employees m
+on e.manager_ID = m.employee_id
+where e.hire_date < m.hire_date;
