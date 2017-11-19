@@ -1,0 +1,10 @@
+select sysdate from dual;
+select employee_id, last_name, salary, trunc(salary*1.155, 0) as "New Salary" from employees;
+select employee_id, last_name, salary, trunc(salary*1.155,0) as "New Salary", trunc(salary*1.55,0)- salary as "Increase" from employees;
+select last_name as "Name", length(last_name) as "Length" from employees where last_name like 'J%' or last_name like 'A%' or last_name like 'M%';
+select last_name as "Name", length(last_name) as "Length" from employees where last_name like '&ALetter%';
+select last_name as "Name", length(last_name) as "Length" from employees where last_name like UPPER('&ALetter%');
+select last_name, Round((sysdate-hire_date)/30.5,0) as "Months Worked" from employees order by "Months Worked" desc;
+select last_name, lpad(salary,15,'$') as "Salary" from employees;
+select Substr(last_name,1,8) as "Employees and their Salaries" from Employees order by Salary desc; --Didn't know how to do the astrisk at the end
+Select last_name, trunc(sysdate-Hire_date,0) Tenure from employees where department_id = 90 order by hire_date;

@@ -1,0 +1,23 @@
+create table my_employee
+(id number(4) CONSTRAINT my_employee_id_nn not null,
+last_name varchar2(25),
+first_name varchar2(25),
+userid varchar2(8),
+salary number(9,2));
+
+insert into my_employee values (1, 'Patel', 'Ralph', 'rpatel', 875);
+insert into my_employee(ID, last_name, first_name, userID, salary) values (2, 'Dancs', 'Betty', 'bdancs', 860);
+insert into my_employee values (3, 'Biri', 'Ben', 'bbiri', 1100);
+insert into my_employee values (4, 'Newman', 'Chad', 'cnewman', 750);
+insert into my_employee values (5, 'Ropeburn', 'Audrey', 'aropebur', 1550);
+commit;
+update my_employee set last_name = 'Drexler' where ID = 3;
+delete from my_employee where FIRST_NAME = 'Betty' and LAST_NAME = 'Dancs' and ID = 2;
+commit;
+
+savepoint preDelete;
+delete my_employee;
+rollback preDelete;
+
+insert into my_employee(ID,Last_Name, First_Name, Salary)  values(6, 'Anthony', 'Mark', 1230);
+update my_employee set userID = lower(concat(SUBSTR(first_name, 0,1),SUBSTR(last_name, 0,7))); 

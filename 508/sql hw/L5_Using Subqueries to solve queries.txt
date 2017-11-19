@@ -1,0 +1,36 @@
+Select last_name, hire_date
+from employees
+where department_id = (select department_id from employees where last_name = '&Last_Name')
+and last_name != '&Last_name'; --pops up with dialog twice
+
+Select Employee_id, Last_name, Salary
+from employees
+where salary > (select avg(salary) from employees)
+order by Salary;
+
+select employee_id, last_name
+from employees
+where department_id in (select department_id from employees where last_name like '%u%');
+
+select last_name, department_id, job_id
+from employees
+where department_id in (select department_id from departments where location_ID = 1700)
+order by Department_id;
+
+select last_name, salary
+from employees
+where manager_id in (select employee_id from employees where last_name = 'King'); --There are 2 people with last name King, but one isn't a manager
+
+select department_id, last_name, job_id
+from employees
+where department_id = (select department_id from departments where department_name = 'Executive');
+
+select first_name||' '||last_name as Employees, salary
+from employees
+where salary > all (select salary from employees where department_id = 60);
+
+select employee_id, last_name, salary
+from employees
+where department_id in (select department_id from employees where last_name like '%u%')
+and salary > any (select avg(salary) from employees)
+order by salary;

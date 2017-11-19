@@ -1,0 +1,11 @@
+True
+True
+Comma after last_name, Multiplication must be represented by *, Annual salary or the alias name must be in quotes or have no space, .
+select * from departments
+desc departments;
+select unique job_ID From EMPLOYEES;
+select employee_ID as "Emp#", last_name as "Employee", job_id as "Job", hire_date as "Hire Date"
+from Employees;
+select last_name || ', ' || job_id as "Employee and Title" from employees;
+select employee_id || ',' || first_name || ',' || last_name || ',' || email || ',' || phone_number || ',' || hire_date|| ',' ||job_id || ',' || 
+salary|| ',' ||commission_pct|| ',' ||manager_id|| ',' ||department_id "The_Output" from EMPLOYEES;
